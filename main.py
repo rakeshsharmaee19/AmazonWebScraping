@@ -47,6 +47,7 @@ def mediaMart():
 
     df = pd.DataFrame(review)
     df.to_csv(r'mediaMartReviews.csv')
+    
 
 def amazon():
     HEADERS = ({'User-Agent':
