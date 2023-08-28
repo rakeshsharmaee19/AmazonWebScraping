@@ -27,6 +27,7 @@ def mediaMart():
     review['price'] = soup.find('div', {'class': 'sc-1vld6r2-1 PQAAE sc-1r6586o-5 bIJnnS'}).text
     temp_dict = {}
     nextPagePointer = soup.find('button', {"class":"sc-140xkaw-1 etwLZa"}).text
+    
     while nextPagePointer == "Página siguiente ›":
         userName = soup.findAll('div', {"class":"sc-1b4w28x-4 bMLqrS sc-v1lln3-0 jmjMWn"})
         for user in userName:
